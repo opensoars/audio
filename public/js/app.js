@@ -78,6 +78,9 @@ var app = {
 
       reader.onloadend = function (){
         app.audio.elem.src = this.result;
+
+        console.log(typeof this.result);
+
         app.play();
       };
 
