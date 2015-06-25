@@ -7,7 +7,7 @@ WebGL and web audio API fun project.
 
 ## What?
 
-A simple audio visualizer using WebGL and web audio API audio.
+A simple audio visualizer using WebGL and web audio API.
 
 
 ## Why?
