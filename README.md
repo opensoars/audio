@@ -24,4 +24,4 @@ Most of the time, just the knowledge gained came in handy, but the actual softwa
 npm install
 node server.js
 ```
-Browse to localhost:3333
+Browse to [localhost:3333](localhost:3333)
