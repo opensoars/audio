@@ -1,7 +1,7 @@
 audio
 =====
 
-WebGL and web audio API fun project.
+WebGL and web audio API fun project. Created in a few hours with the help of coffee and a beer.
 
 ---
 
