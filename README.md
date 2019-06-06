@@ -21,6 +21,8 @@ Most of the time, just the knowledge gained came in handy, but the actual softwa
 
 ## How to use?
 ```
+git clone https://github.com/opensoars/audio
+cd audio
 npm install
 node server.js
 ```
