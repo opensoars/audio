@@ -194,7 +194,7 @@ var app = {
             cube_color_intensity = (freq_data[i*16]/255);
 
         cube.scale.set(cube_scale, cube_scale, cube_scale)
-        cube.position.y = cube_y;
+        cube.position.y = cube_y * 1.5;
         cube.rotation.x += cube_rot;
         cube.rotation.y += cube_rot;
 
@@ -224,12 +224,20 @@ var app = {
 
 
     app.play = function (){
+      //window.focus();
       this.paused = !this.paused;
-      this.audio.elem.play();
+      console.log(this.audio);
 
-      this.elems.loader.style.display = 'none';
+      setTimeout(() => {
+        this.audio.elem.play().then(() => {
+          this.elems.loader.style.display = 'none';
 
-      render();
+          render();
+        });
+
+      }, 10);
+
+
     };
 
     app.pause = function (){
@@ -245,6 +253,10 @@ var app = {
 };
 
 window.onload = function (){
+  
+};
+
+document.getElementById('start').onclick = () => {
   app.initialize().play();
 };
 
